@@ -37,7 +37,7 @@ except URLError as e:
   
 #streamlit.write('The user entered ', fruit_choice)
 
-"""
+
 streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
@@ -54,4 +54,4 @@ streamlit.write("What fruit would you like to add?")
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
 streamlit.write('Thanks for adding ', add_my_fruit)
 my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values ('from streamlit')")
-"""
+
